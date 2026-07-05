@@ -1,0 +1,17 @@
+# Penalty Shootout (Vite + TypeScript) - Updated
+
+This branch adds: 
+- Shooter AI (AI takes penalties with strategy)
+- Animated low-poly player and goalkeeper animations
+- MediaRecorder-based replay export (webm) and in-game replay gallery
+- Procedural/offline crowd texture and animated UV scrolling
+- Polished league progression UI (tier, points, trophies)
+
+Run locally:
+
+1) npm install
+2) npm run dev
+
+Notes:
+- MediaRecorder requires browser support; exported replays are WEBM. You can download them from the Replays panel.
+- Audio is synthesized via WebAudio and will require a user gesture to start in some browsers.
