@@ -1,28 +1,24 @@
-# 3D EPL Penalty Shootout - Starter
+# Penalty Shootout (Vite + TypeScript)
 
-This branch contains a playable Three.js-based penalty shootout starter for the browser. It focuses on a fun, playable experience with a lightweight AI goalkeeper, simple ball physics, and vivid feedback on goals/misses.
+This branch converts the starter to a Vite + TypeScript project and adds:
+- 5-shot-per-side match flow with sudden death
+- Slow-motion replay camera for goals
+- WebAudio-synthesized goal/miss/crowd sounds (no external audio files required)
+- Textured stadium crowd with animated UV scrolling (hi-res image loaded from Unsplash)
+- League progression saved to localStorage (tiers, points, trophies)
 
-Files included:
-- index.html
-- style.css
-- src/ai/GoalkeeperAI.js
-- src/physics/Physics.js
-- src/game/Penalty.js
-- src/game/Game.js
-- src/ui/UI.js
-- src/main.js
+Run locally:
 
-Run locally (recommended via simple HTTP server):
+1) Install deps
+   npm install
 
-1) Using Python 3 (recommended):
+2) Dev server
+   npm run dev
 
-   python -m http.server 8000
-   open http://localhost:8000 in Chrome
+3) Build
+   npm run build
+   npm run preview
 
-2) Or open index.html directly in Chrome (note: module loading or file:// restrictions may apply).
-
-Notes & next steps:
-- This is plain JavaScript and no build step is required. For a TypeScript + Vite setup, I can convert and add build config.
-- Consider adding audio, replay, and full 5-penalty-match flow for league mode.
-
-Enjoy! If you'd like, I can open a pull request from this branch into your default branch.
+Notes:
+- The crowd texture is loaded from an external Unsplash URL (hi-res). Replace the URL in src/game/Game.ts with your preferred image if desired.
+- Audio is synthesized using WebAudio for portability; you can replace with sampled files if you want later.

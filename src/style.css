@@ -1,0 +1,23 @@
+:root{
+  --accent:#1e90ff;
+  --bg:#081229;
+  --panel: rgba(0,0,0,0.6);
+  --text:#e8f0ff;
+}
+html,body{margin:0;height:100%;background:linear-gradient(180deg,#071025 0%, #0b1a2b 100%);font-family:Inter, Arial, sans-serif;color:var(--text)}
+canvas{display:block; width:100vw; height:100vh;}
+#ui-root{position:fixed;left:0;top:0;right:0;pointer-events:none;}
+.panel{pointer-events:auto;position:fixed;background:var(--panel);padding:12px;border-radius:8px;color:var(--text);box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+#menu{left:16px;top:16px;width:340px}
+#score{right:16px;top:16px;width:260px;text-align:center}
+.button{display:inline-block;padding:8px 10px;margin:6px;background:var(--accent);color:#fff;border-radius:6px;cursor:pointer}
+.small{font-size:13px}
+#power-bar{height:10px;background:#22334a;border-radius:6px;overflow:hidden;margin-top:6px}
+#power-fill{height:100%;background:linear-gradient(90deg,#ffd166,#ff6b6b);width:0%}
+#message{position:fixed;left:50%;top:20%;transform:translateX(-50%);font-size:48px;color:#fff;text-shadow:0 3px 22px rgba(0,0,0,0.7);pointer-events:none}
+#controls{left:16px;bottom:16px;width:340px;font-size:13px;opacity:0.95}
+.club-select{width:100%;padding:8px;border-radius:6px;margin-top:8px}
+.small-muted{font-size:12px;color:#b8d0ff}
+.center{display:flex;align-items:center;justify-content:center}
+.confetti{position:fixed;left:0;top:0;bottom:0;right:0;pointer-events:none}
+.league-panel{left:380px;top:16px;width:300px}
